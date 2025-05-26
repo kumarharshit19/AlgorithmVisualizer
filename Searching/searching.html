@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching Visualizer</title>
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="searching.css">
+    <link rel="stylesheet" href="prism.css">
+</head>
+
+<body>
+
+    <section id="fullbody">
+        <!-- Header -->
+        <header>
+            <h1 id="name">
+                <a href="searching.html"><span class="big">S</span>EARCHING</a>
+                <a href="searching.html"><span class="big">V</span>ISUALIZER<span> 🔥 </span></a>
+            </h1>
+
+            <div id="basic_btn">
+                <div class="gen">
+                    <div class="dropdown">
+                        <button class="select">
+                            <div class="selected">Click any Button</div>
+                        </button>
+                    </div>
+
+                    <div class="generate_new_array">
+                        <button id="generate">Generate New Array</button>
+                    </div>
+                </div>
+
+                <div class="sizespeed">
+                    <div class="array_range">
+                        <button id="size">Size: <span id="size_value"></span></button>
+                        <input type="range" id="size_slider" min="4" max="100" value="64">
+                    </div>
+
+                    <div class="array_speed">
+                        <button id="speed">Speed: <span id="speed_value"></span></button>
+                        <input type="range" id="speed_slider" min="1" max="5" value="5">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Working Area -->
+        <div id="working_area">
+            <div id="mainbody">
+                <!-- Bars will be dynamically added here -->
+            </div>
+
+            <div class="result">
+                <div class="present">
+                    <div class="note">Element Present at:</div>
+                    <div class="index"></div>
+                </div>
+
+                <span class="boundary"></span>
+
+                <div class="stepCount">
+                    <div class="note" id="step">Step Count:</div>
+                    <div class="step"></div>
+                </div>
+            </div>
+
+            <!-- Controls (Updated Layout) -->
+            <div id="search_controls">
+                <button id="linear_Search">Linear Search</button>
+                <button id="binary_Search">Binary Search</button>
+                <input type="text" id="searchingVal" placeholder="Search (20-350)">
+                <a href="../index.html" title="Home">
+                    <ion-icon name="home"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="searching.js"></script>
+    <script src="LinearSearch.js"></script>
+    <script src="Binary.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="prism.js"></script>
+</body>
+
+</html>

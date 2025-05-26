@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Algorithm Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <div class="theme-toggle">
+    <ion-icon name="moon-outline" class="moon"></ion-icon>
+    <ion-icon name="sunny-outline" class="sun"></ion-icon>
+  </div>
+
+  <main class="container">
+    <h1>Algorithm Visualizer</h1>
+    <div class="buttons">
+      <a href="Sorting/sorting.html" class="btn">Sorting Visualizer</a>
+      <a href="Searching/searching.html" class="btn">Searching Visualizer</a>
+    </div>
+  </main>
+
+  <script>
+    const toggle = document.querySelector('.theme-toggle');
+    const body = document.body;
+
+    toggle.addEventListener('click', () => {
+      body.classList.toggle('dark');
+      toggle.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

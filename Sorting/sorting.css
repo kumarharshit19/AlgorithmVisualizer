@@ -1,0 +1,131 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 20px;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+#name a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #00adb5;
+    margin: 0 5px;
+}
+
+.big {
+    font-size: 2.5rem;
+    color: #ff5722;
+}
+
+#basic_btn {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gen,
+.sizespeed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    background-color: #393e46;
+    color: #eeeeee;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #00adb5;
+    transform: translateY(-2px);
+}
+
+/* Sliders */
+input[type="range"] {
+    width: 120px;
+    margin-left: 10px;
+}
+
+#working_area {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Bars */
+#mainbody {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 400px;
+    margin-top: 20px;
+    gap: 2px;
+    padding: 10px;
+    overflow-x: auto;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+}
+
+.bar {
+    background-color: #00adb5;
+    width: 1vw;
+    margin: 0 1px;
+    text-align: center;
+    color: white;
+    font-size: 0.7rem;
+    border-radius: 4px 4px 0 0;
+}
+
+/* Sorting buttons */
+#buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Icon Button */
+ion-icon {
+    font-size: 24px;
+    color: #ffffff;
+    vertical-align: middle;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #mainbody {
+        height: 300px;
+    }
+
+    .bar {
+        width: 2vw;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}

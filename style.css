@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --bg: #f4f4f4;
+  --text: #111;
+  --btn-bg: #007acc;
+  --btn-text: #fff;
+  --btn-hover: #005b9f;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: all 0.3s ease;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover);
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 10;
+}
+
+.theme-toggle ion-icon {
+  color: var(--text);
+  display: none;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle .moon {
+  display: inline;
+}
+
+.theme-toggle.active .moon {
+  display: none;
+}
+
+.theme-toggle.active .sun {
+  display: inline;
+}
+
+/* Dark Mode */
+body.dark {
+  --bg: #111;
+  --text: #f4f4f4;
+  --btn-bg: #0b84ff;
+  --btn-hover: #086bc1;
+}
